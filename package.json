@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/bryanuma78/API/issues"
   },
-  "homepage": "https://github.com/bryanuma78/API#readme"
+  "homepage": "https://github.com/bryanuma78/API#readme",
+  "dependencies": {
+    "api": "file:"
+  }
 }

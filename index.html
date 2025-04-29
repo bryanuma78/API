@@ -1,15 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./styles/app.css">
+  <!-- Metadatos básicos del documento -->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Preconexión y carga de fuentes de Google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@700;800&family=Red+Hat+Display:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Enlace a la hoja de estilos CSS -->
+  <link rel="stylesheet" href="./styles/app.css" />
+
+  <!-- Título de la página -->
+  <title>Movies</title>
 </head>
 <body>
-    <h1>Movies</h1>
-    <script src="./src/secret.js"></script>
-    <script src="./src/main.js"></script>
-    kkk
+  <!-- Cabecera principal del sitio -->
+  <header id="header" class="header-container">
+    <!-- Flecha de navegación (inactiva por defecto) -->
+    <span class="header-arrow inactive">&lt;</span>
+
+    <!-- Título principal -->
+    <h1 class="header-title">Movies</h1>
+
+    <!-- Título para vista de categoría (inactivo por defecto) -->
+    <h1 class="header-title header-title--categoryView inactive">Acción</h1>
+
+    <!-- Formulario de búsqueda -->
+    <form id="searchForm" class="header-searchForm">
+      <input type="text" placeholder="Vengadores" />
+      <button type="submit">🔍</button>
+    </form>
+  </header>
+
+  <script src="./src/secret.js"></script>
+  <script src="./src/main.js"></script>
 </body>
 </html>
